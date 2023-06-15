@@ -1,77 +1,81 @@
-body {
-    margin: 0;
-    padding: 0;
-    /* background-image: url(/sun.jpg); */
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter Tight', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   }
-  
-  h1 {
-    text-align: center;
+  body{
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      width: 100vw;
   }
-  
-  form {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-  }
-  
-  input[type="text"] {
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px 0 0 5px;
-  }
-  
-  button[type="submit"] {
-    padding: 10px;
-    font-size: 16px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-  }
-  
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  li:last-child {
-    border-bottom: none;
-  }
-  
-  .edit, .delete {
-    padding: 5px 10px;
-    font-size: 14px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .edit {
-    background-color: #2196F3;
-    color: white;
-    margin-right: 10px;
-  }
-  
-  .delete {
-    background-color: #f44336;
-    color: white;
-  }
-
-Sure, here are a few codes that can make your font look like 3D:
-
-Code snippet
-/* 3D Text using CSS */
-
-
-  
+.title{
+  font-size: 50px;
+  font-weight: 600;
+  color: rgb(15, 15, 248);letter-spacing: 1px;
+  margin: 30px 0;
+}
+.todo-list{
+  width: 450px;
+  padding: 20px;
+  box-shadow: 0 10px,40px rgb(22, 6, 6);
+  border-radius: 5px;
+  background-color: #fff;
+}
+.list-head{
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  gap: 20px;
+}
+.list{
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+.add-list{
+  border: none;
+  border-radius: 5px;
+  background-color:greenyellow;
+  outline: none;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+.tasks{
+  width: 100%;
+  margin-top: 30px;
+}
+.items{
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: #0A0A0A;
+  margin-bottom:20px ;
+  display: flex;
+  justify-content: space-between;
+   align-items: center;
+}
+.items p{
+  font-size: 16px;
+  font-weight: 500;
+  color: purple;
+  letter-spacing: 1px;
+}
+.items.completed p{
+  text-decoration: line-through;
+  color: #0A0A0A;
+}
+.items-btn{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.items-btn i{
+  color: gray;
+  font-size: 18px;
+  cursor: pointer;
+}
